@@ -165,35 +165,6 @@
 <script src="js/vendor/modernizr-3.6.0.min.js"></script>
 <script src="js/vendor/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-$(document).ready(function() {
-  $('#contacto2').on('submit', function() {
-    $('.output_message').text('Cargando...');
-    var form = $(this);
-    $.ajax({
-      url: form.attr('action'),
-      method: form.attr('method'),
-      data: form.serialize(),
-      success: function(result) {
-        if (result == 'success') {
-          $('.output_message').text('Mensaje enviado! Pronto nos contactaremos con usted');
-          document.getElementById("contacto2").reset();
-        } else {
-          $('.output_message').text('ERROR: Su mensaje no pudo ser enviado.');
-        }
-      }
-    });
-    // Prevents default submission of the form after clicking on the submit button.
-    return false;
-  });
-});
-</script>
-<script type="text/javascript">
-var onloadCallback = function() {
-  grecaptcha.render('html_element', {
-    'sitekey': '6LdEaMkgAAAAAORuep3v5yxbxdnu5OjKpYXFGUcu'
-  });
-};
-</script>
+
 
 </html>
