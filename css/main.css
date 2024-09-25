@@ -308,7 +308,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px 100px;
+    gap: 5px 100px;
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
@@ -381,7 +381,6 @@ section{
         display: flex;
         gap: 32px;
         flex-direction: column;
-        padding: 16px;
         .bajada{
             max-width: 750px;
             margin: 0 auto;
@@ -411,7 +410,7 @@ section{
                 }
                 .tit{
             font-weight: 500;
-            font-size: 20px;
+            font-size: 18px;
             margin: 0;
             padding: 0;
             text-align: left;
@@ -490,6 +489,7 @@ section{
     }
     .sop-form{
         max-width: 750px;
+		gap: 32px;
     }
     @media screen and (max-width: 800px) {
         flex-direction: column;
