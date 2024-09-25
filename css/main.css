@@ -308,7 +308,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 32px 100px;
+    gap: 50px 100px;
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
@@ -588,7 +588,7 @@ section{
 
 	header,
 	header.small {
-		height: 40px;
+		height: 45px;
 	}
 
 	.wrap-slider {
@@ -605,7 +605,9 @@ section{
 
 	.logo img,
 	.small .logo img {
-		max-height: 65px;
+		max-height: 22px;
+		transform: none;
+		margin: 0 0 0 16px;
 	}
 
 
